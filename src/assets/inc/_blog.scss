@@ -1,0 +1,248 @@
+// Variables (réutilisées depuis _home.scss)
+$primary-color: #646cff;
+$primary-hover: #535bf2;
+$text-primary: rgba(255, 255, 255, 0.87);
+$text-secondary: rgba(255, 255, 255, 0.7);
+$text-muted: rgba(255, 255, 255, 0.5);
+$bg-card: rgba(255, 255, 255, 0.02);
+$border-color: rgba(255, 255, 255, 0.1);
+$border-hover: rgba(255, 255, 255, 0.2);
+$spacing-section: 6rem;
+$spacing-card: 2rem;
+$border-radius: 8px;
+$transition: all 0.3s ease;
+$bg-dark: #1a1a1a;
+
+// Animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Container principal
+.container-blog {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: $text-primary;
+  animation: fadeIn 0.5s ease-out;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+.container-blog-content {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-section;
+}
+
+// Header Section
+.blog-header {
+  text-align: left;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+  margin-bottom: 3rem;
+  padding: 0;
+}
+
+.blog-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+  color: $text-primary;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.75rem;
+  }
+}
+
+.blog-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  color: $text-secondary;
+  max-width: 800px;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+// Blog Articles Section
+.blog-articles-section {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.blog-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+  padding-left: 2rem;
+
+  // Ligne verticale de la timeline
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      $primary-color,
+      rgba(100, 108, 255, 0.3)
+    );
+  }
+
+  @media (max-width: 768px) {
+    padding-left: 1.5rem;
+    gap: 2rem;
+  }
+}
+
+.blog-item {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  transition: $transition;
+
+  // Point sur la timeline
+  &::before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $primary-color;
+    border: 2px solid $bg-dark;
+    box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.2);
+    transition: $transition;
+  }
+
+  &:hover {
+    .blog-content-card {
+      transform: translateX(5px);
+      border-color: $border-hover;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    &::before {
+      transform: scale(1.2);
+      box-shadow: 0 0 0 4px rgba(100, 108, 255, 0.3);
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+
+    &::before {
+      left: -1.75rem;
+    }
+
+    &:hover {
+      .blog-content-card {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.blog-date {
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
+  font-weight: 600;
+  color: $primary-color;
+  font-size: 1rem;
+  padding-top: 0.25rem;
+  text-align: right;
+  word-break: break-word;
+  overflow-wrap: break-word;
+
+  @media (max-width: 768px) {
+    width: auto;
+    min-width: auto;
+    max-width: none;
+    text-align: left;
+    font-size: 0.95rem;
+  }
+}
+
+.blog-content-card {
+  flex: 1;
+  padding: $spacing-card;
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  transition: $transition;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.25rem;
+  }
+}
+
+.blog-article-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+  color: $text-primary;
+  transition: $transition;
+
+  .blog-item:hover & {
+    color: $primary-color;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+}
+
+.blog-article-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: $text-secondary;
+  margin: 0;
+  opacity: 0.9;
+}
+
+// Responsive adjustments
+@media (max-width: 480px) {
+  .blog-header {
+    margin-bottom: 2rem;
+  }
+}

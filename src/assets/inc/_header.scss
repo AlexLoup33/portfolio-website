@@ -1,0 +1,275 @@
+// Variables pour le header
+$header-bg: rgba(26, 26, 26, 0.8);
+$header-border: rgba(255, 255, 255, 0.1);
+$header-link-color: rgba(255, 255, 255, 0.87);
+$header-link-hover: #646cff;
+$header-link-active: #535bf2;
+$header-transition: all 0.3s ease;
+$header-padding: 1.5rem 2rem;
+
+// Animations
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Header principal
+header {
+  position: relative;
+  width: 100%;
+  background-color: $header-bg;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  transition: $header-transition;
+  
+  // Animation d'entrée
+  animation: slideDown 0.6s ease-out;
+
+  // Séparateur discret avec dégradé
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(255, 255, 255, 0.08) 20%,
+      rgba(255, 255, 255, 0.12) 50%,
+      rgba(255, 255, 255, 0.08) 80%,
+      transparent 100%
+    );
+  }
+
+  // Alternative : séparateur avec ombre douce
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   right: 0;
+  //   height: 1px;
+  //   background: rgba(255, 255, 255, 0.06);
+  //   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  // }
+
+  // Effet d'ombre au scroll (optionnel)
+  &.scrolled {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+// Navigation dans le header uniquement
+header nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $header-padding;
+  animation: fadeInUp 0.8s ease-out 0.2s both; // Délai pour apparaître après le header
+
+  @media (max-width: 768px) {
+    padding: 1rem 1.5rem;
+  }
+}
+
+// Liste de navigation dans le header uniquement
+header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (max-width: 768px) {
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+// Sélecteur de langue
+.language-selector {
+  margin-left: auto;
+  opacity: 1 !important; // Pas d'animation pour le sélecteur
+  animation: none !important;
+  
+  &::after {
+    display: none; // Pas de ligne de soulignement
+  }
+  
+  select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid $header-border;
+    border-radius: 4px;
+    color: $header-link-color;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: $header-transition;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: $header-link-hover;
+    }
+
+    &:focus {
+      outline: 2px solid $header-link-hover;
+      outline-offset: 2px;
+    }
+
+    option {
+      background: $header-bg;
+      color: $header-link-color;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+// Items de liste avec animation séquentielle dans le header uniquement
+header li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+
+  // Animation séquentielle pour chaque item
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{0.4 + ($i * 0.1)}s;
+    }
+  }
+
+  // Ligne de soulignement au survol
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $header-link-hover;
+    transition: width $header-transition;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+// Liens de navigation dans le header uniquement
+header a {
+  display: inline-block;
+  color: $header-link-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  transition: $header-transition;
+  position: relative;
+
+  // État par défaut
+  &:link,
+  &:visited {
+    color: $header-link-color;
+  }
+
+  // État au survol
+  &:hover {
+    color: $header-link-hover;
+    transform: translateY(-2px);
+  }
+
+  // État actif (page courante)
+  &.router-link-active,
+  &.router-link-exact-active {
+    color: $header-link-active;
+    font-weight: 600;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $header-link-active;
+    }
+  }
+
+  // Focus pour l'accessibilité
+  &:focus {
+    outline: 2px solid $header-link-hover;
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+
+  // Animation au clic
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Responsive - Menu mobile (optionnel pour plus tard)
+@media (max-width: 480px) {
+  nav {
+    ul {
+      justify-content: center;
+    }
+
+    a {
+      font-size: 0.85rem;
+      padding: 0.4rem 0;
+    }
+  }
+}
+// Animation d'entrée améliorée pour le header
+@keyframes slideDownFade {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+header {
+  animation: slideDownFade 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+

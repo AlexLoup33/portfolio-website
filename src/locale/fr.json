@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "home": "ACCUEIL",
+    "work": "PROJETS",
+    "blog": "BLOG"
+  },
+  "home": {
+    "aboutMe": "À PROPOS DE MOI",
+    "heyTitle": "Salut, je suis Alex👋",
+    "heySubtitle": "Étudiant en Master Informatique Parcours Réseaux, aspirant à travailler dans le domaine du Calcul Haute Performance (HPC).",
+    "myMission": "Ma mission",
+    "myMissionText": "Ma mission est d'approfondir mes connaissances en réseaux et en calcul haute performance, et de l'appliquer à des systèmes et projets à grande échelles.",
+    "aboutMeTitle": "À propos de moi.",
+    "aboutMe1": "J'ai commencé la programmation en 2020 avec Godot, ce qui m'a introduit au développement logiciel et à la résolution de problèmes.",
+    "aboutMe2": "Je suis actuellement étudiant en Master 1 informatique parcours Réseaux, avec un fort intérêt pour le Calcul Haute Performance, la programmation bas niveau et la programmation parallèle, et je vise à poursuivre un doctorat.",
+    "aboutMe3": "Je développe principalement des logiciels natifs en C et C++, et j'utilise Python pour le prototypage, l'expérimentation et les outils, avec un fort accent sur les performances et l'efficacité.",
+    "cv": "CV",
+    "downloadCV": "Télécharger mon CV",
+    "professionalBackground": "Parcours Professionnel",
+    "academicBackground": "Parcours Académique",
+    "associations": "Associations & Implication",
+    "technologies": {
+      "title": "Technologies que j'utilise.",
+      "subtitle": "Au fil des années, j'ai travaillé avec une variété de technologies. Voici quelques-unes des technologies avec lesquelles j'ai de l'expérience :",
+      "more": "...et bien d'autres !"
+    },
+    "contact": {
+      "title": "Contactez-moi.",
+      "subtitle": "Je suis toujours désireux d'explorer de nouvelles opportunités et de m'impliquer dans des projets passionnants. Si vous avez un projet en tête, ou si vous voulez simplement dire bonjour, n'hésitez pas à m'envoyer un message.",
+      "name": "Nom*",
+      "email": "Email*",
+      "message": "Message*",
+      "namePlaceholder": "Votre nom",
+      "emailPlaceholder": "votre.email@exemple.com",
+      "messagePlaceholder": "Votre message...",
+      "charCount": "caractères",
+      "send": "Envoyer",
+      "orContact": "Ou contactez-moi avec..."
+    }
+  },
+  "professional": {
+    "internship2026": {
+        "date": "Février 2026 - Septembre 2026",
+      "title": "Stage HPC",
+      "company": "Inria",
+      "description": "Stage en Calcul Haute Performance basé sur le sujet suivant<br>Amélioration des performances I/O de l'application HPC Gysela"
+    },
+    "payroll2023": {
+        "date":"Eté 2023 à 2025",
+      "title": "Gestionnaire de Paie",
+      "company": "Sodexo",
+      "description": "Gestion de payes et diverses tâches de paie pour les employés de Sodexo"
+    }
+  },
+  "academic": {
+    "master2024": {
+        "date": "2024 - Maintenant",
+      "title": "Master en Réseaux Informatiques",
+      "institution": "Université de Bordeaux",
+      "description": "Spécialisé en Calcul Haute Performance, calcul distribué et architecture réseau."
+    },
+    "bachelor2021": {
+        "date": "2021 - 2024",
+      "title": "Licence en Informatique",
+      "institution": "Université de Bordeaux",
+      "description": "Développement, algorithmes et système."
+    },
+    "bac2018": {
+        "date": "2018 - 2021",
+      "title": "Baccalauréat Scientifique au Lycée Camille Jullian",
+      "institution": "Lycée Camille Jullian",
+      "description": "Baccalauréat spécialité mathématiques et Physique-Chimie"
+    }
+  },
+  "associations": {
+    "labeli": {
+        "date": "2021 - Maintenant",
+      "role": "Président/Secrétaire/Coordinateur Local",
+      "description": "Au cours de mes années dans l'association, j'ai occupé plusieurs rôles de leadership, notamment Secrétaire, Président et Responsable Local, ce qui m'a permis d'acquérir de l'expérience en organisation, coordination et responsabilité."
+    },
+    "ambigu": {
+        "date": "2024 - Maintenant",
+      "role": "Conseiller IT",
+      "description": "Je suis responsable informatique de l'association étudiante AMBiGU, une association étudiante bordelaise axée sur la géologie. Mon rôle est d'assurer la maintenance et le bon fonctionnement de ses outils numériques."
+    }
+  },
+  "work": {
+    "title": "Mes Projets",
+    "subtitle": "Ici sont exposés tous mes projets. Vous pouvez les retrouver sur ",
+    "githubLink": "GitHub",
+    "viewOnGithub": "Voir sur GitHub",
+    "readBlog": "Lire le blog",
+    "projets": {
+        "takuzu2077":{
+            "title":"Takuzu 2077",
+            "date": "2022 - 2023",
+            "description": "Implémentation du jeu du Takuzu en C et Web3 dans le cadre de notre matière 'Projet Technologique' en 2ème année de licence. Implémentation du jeu, solver, historique, interface graphique et portage web3."
+        },
+        "webApp-image":{
+            "title": "Web App Images",
+            "date": "Janvier 2024 - Avril 2024",
+            "description": "Implémentation d'une web app backend/frontend dans le cadre d'un projet étudiant permettant d'héberger et d'appliquer des filtres à des images et des GIF"
+        },
+        "scrabble": {
+            "title": "Scrabble",
+            "date": "Janvier 2025 - Avril 2025",
+            "description": "Projet de groupe en Java visant à implémenter un scrabble from scratch avec diverses options : Interface CLI, Interface graphique, Modes de jeu (Normal, Blitz, Super Scrabble), dictionnaires customisables, historique et sauvegarde des parties, et encore plein d'autres options."
+        }
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Ici, je partage mes réflexions, mes expériences de développement et des articles techniques sur mes projets et les technologies que j'utilise.",
+    "articles": {
+      "takuzu": {
+        "title": "Takuzu 2077 - Développement et Architecture",
+        "date": "Mars 2023",
+        "description": "Retour sur le développement du jeu Takuzu en C avec interface graphique SDL2, solver automatique et portage Web3."
+      }
+    }
+  },
+  "footer": {
+    "contact": "Contact",
+    "followMe": "Suivez-moi",
+    "navigation": "Navigation",
+    "copyright": "Tous droits réservés."
+  }
+}

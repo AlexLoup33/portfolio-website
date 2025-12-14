@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "home": "HOME",
+    "work": "WORK",
+    "blog": "BLOG"
+  },
+  "home": {
+    "aboutMe": "ABOUT ME",
+    "heyTitle": "Hey, I'm Alex👋",
+    "heySubtitle": "Master's student in Computer Networks, aspiring to work in High Performance Computing and large-scale systems.",
+    "myMission": "My mission",
+    "myMissionText": "My mission is to deepen my expertise in computer networks and high-performance computing, and apply it to real-world large-scale systems.",
+    "aboutMeTitle": "About me.",
+    "aboutMe1": "I started programming in 2020 with Godot, which introduced me to software development and problem-solving.",
+    "aboutMe2": "I am currently a Master's student in Computer Networks, with a strong interest in High Performance Computing, system-level programming and distributed systems, and I aim to pursue a PhD.",
+    "aboutMe3": "I mainly develop native software in C and C++, and use Python for prototyping, experimentation and tooling, with a strong focus on performance and efficiency.",
+    "cv": "CV",
+    "downloadCV": "Download CV",
+    "professionalBackground": "Professional Background",
+    "academicBackground": "Academic Background",
+    "associations": "Associations & Involvement",
+    "technologies": {
+      "title": "Technologies I use.",
+      "subtitle": "Over the years, I have worked with a variety of technologies. Here are some of the technologies I have experience with:",
+      "more": "...and many more!"
+    },
+    "contact": {
+      "title": "Contact me.",
+      "subtitle": "I'm always eager to explore new opportunities and take on exciting projects. If you have a project in mind, or just want to say hi, feel free to send me a message.",
+      "name": "Name*",
+      "email": "Email*",
+      "message": "Message*",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your.email@example.com",
+      "messagePlaceholder": "Your message...",
+      "charCount": "characters",
+      "send": "Send",
+      "orContact": "Or contact me with..."
+    }
+  },
+  "professional": {
+    "internship2026": {
+      "title": "HPC internship",
+      "company": "Inria",
+      "description": "High Performance Computing internship based on the following subject<br>Improving I/O performance of the Gysela HPC application"
+    },
+    "payroll2023": {
+      "title": "Payroll Manager",
+      "company": "Sodexo",
+      "description": "Salary administration and various payroll tasks for Sodexo employees"
+    }
+  },
+  "academic": {
+    "master2024": {
+      "title": "Master's Degree in Computer Networks",
+      "institution": "Bordeaux's University",
+      "description": "Specialized in High Performance Computing, distributed systems, and network architecture."
+    },
+    "bachelor2021": {
+      "title": "University Bachelor's Degree in Computer Science",
+      "institution": "Bordeaux's University",
+      "description": "Foundation in development, algorithms, and computer systems."
+    },
+    "bac2018": {
+      "title": "Scientific's Bachelor's Degree in Camille Jullian High School's",
+      "institution": "Lycée Camille Jullian",
+      "description": "Bachelor's Degree in mathematics and Physics and Chemistry"
+    }
+  },
+  "associations": {
+    "labeli": {
+      "role": "President/Secretary/Local Manager",
+      "description": "During my years in the association, I held several leadership roles, including Secretary, President, and Local Coordinator, which allowed me to gain experience in organization, coordination, and responsibility."
+    },
+    "ambigu": {
+      "role": "IT advisor",
+      "description": "I am responsible for the IT infrastructure of the student association AMBiGU, a geology-focused student organization, ensuring the maintenance and proper functioning of its digital tools."
+    }
+  },
+  "work": {
+    "title": "My Projects",
+    "subtitle": "Here are all my projects displayed. You can find them on ",
+    "githubLink": "GitHub",
+    "viewOnGithub": "View on GitHub",
+    "readBlog": "Read Blog",
+    "projets": {
+        "takuzu2077": {
+            "title": "Takuzu 2077",
+            "date": "2022 - 2023",
+            "description": "Implementation of the Takuzu game in C and Web3 as part of the 'Technological Project' course during the second year of the bachelor's degree. Game implementation, solver, history, graphical interface, and Web3 port."
+        },
+        "webApp-image": {
+            "title": "Web App Images",
+            "date": "January 2024 - April 2024",
+            "description": "Implementation of a backend/frontend web application as part of a student project, allowing image and GIF hosting and the application of filters."
+        },
+        "scrabble": {
+            "title": "Scrabble",
+            "date": "January 2025 - April 2025",
+            "description": "Group project in Java aiming to implement a Scrabble game from scratch with various features: CLI interface, graphical interface, game modes (Normal, Blitz, Super Scrabble), customizable dictionaries, game history and save system, and many more options."
+        }
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Here, I share my thoughts, development experiences, and technical articles about my projects and the technologies I use.",
+    "articles": {
+      "takuzu": {
+        "title": "Takuzu 2077 - Development and Architecture",
+        "date": "March 2023",
+        "description": "A look back at the development of the Takuzu game in C with SDL2 graphical interface, automatic solver and Web3 port."
+      }
+    }
+  },
+  "footer": {
+    "contact": "Contact",
+    "followMe": "Follow me",
+    "navigation": "Navigation",
+    "copyright": "All rights reserved."
+  }
+}

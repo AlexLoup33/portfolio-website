@@ -19,6 +19,12 @@ const routes: Array<RouteRecordRaw> = [
         name: "blog",
         component: () => import ("./components/Blog.vue"),
         props: true
+    },
+    {
+        path: "/blog/takuzu",
+        name: "Takuzu 2077",
+        component: () => import ("./components/articles/Takuzu.vue"),
+        props: true
     }
 ];
 
