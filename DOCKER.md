@@ -139,4 +139,47 @@ docker ps
 
 # Tester l'accès
 curl http://localhost:8082
+
+# Voir les logs du container (important pour déboguer)
+docker logs portfolio-website
+
+# Voir les logs nginx
+docker exec portfolio-website cat /var/log/nginx/error.log
+docker exec portfolio-website cat /var/log/nginx/access.log
+```
+
+## Dépannage de l'erreur 502
+
+Si vous obtenez une erreur 502, voici les étapes de diagnostic :
+
+1. **Vérifier que le container tourne** :
+```bash
+docker ps
+```
+
+2. **Vérifier les logs du container** :
+```bash
+docker logs portfolio-website
+```
+
+3. **Vérifier que les fichiers sont bien présents dans le container** :
+```bash
+docker exec portfolio-website ls -la /usr/share/nginx/html
+```
+
+4. **Vérifier la configuration nginx** :
+```bash
+docker exec portfolio-website nginx -t
+```
+
+5. **Vérifier les logs nginx** :
+```bash
+docker exec portfolio-website cat /var/log/nginx/error.log
+```
+
+6. **Si le problème persiste, reconstruire l'image** :
+```bash
+docker-compose down
+docker-compose build --no-cache
+docker-compose up -d
 ```
