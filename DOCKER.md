@@ -28,7 +28,7 @@ docker-compose logs -f
 docker-compose down
 ```
 
-Le site sera accessible sur `http://vps-ip:8080`
+Le site sera accessible sur `http://vps-ip:8082`
 
 ## Méthode 2 : Avec Docker uniquement
 
@@ -41,7 +41,7 @@ docker build -t portfolio-website .
 ```bash
 docker run -d \
   --name portfolio-website \
-  -p 8080:80 \
+  -p 8082:80 \
   --restart unless-stopped \
   portfolio-website
 ```
@@ -93,16 +93,18 @@ docker build -t portfolio-website .
 # Relancer le container
 docker run -d \
   --name portfolio-website \
-  -p 8080:80 \
+  -p 8082:80 \
   --restart unless-stopped \
   portfolio-website
 ```
 
 ## Configuration du port
 
-Pour changer le port d'exposition, modifiez le fichier `docker-compose.yml` :
+Le port est configuré sur 8082. Pour changer le port d'exposition, modifiez le fichier `docker-compose.yml` :
 ```yaml
 ports:
+  - "8082:80"  # Port actuel (8082 externe -> 80 interne)
+  # ou
   - "80:80"  # Pour exposer directement sur le port 80
   # ou
   - "3000:80"  # Pour exposer sur le port 3000
@@ -111,8 +113,8 @@ ports:
 ## Utilisation avec un reverse proxy (Nginx/Apache)
 
 Si vous utilisez un reverse proxy sur le VPS, vous pouvez :
-1. Exposer le container sur `localhost:8080` (au lieu de `0.0.0.0:8080`)
-2. Configurer votre reverse proxy pour pointer vers `localhost:8080`
+1. Exposer le container sur `localhost:8082` (au lieu de `0.0.0.0:8082`)
+2. Configurer votre reverse proxy pour pointer vers `localhost:8082`
 
 Exemple de configuration Nginx :
 ```nginx
@@ -121,7 +123,7 @@ server {
     server_name votre-domaine.com;
 
     location / {
-        proxy_pass http://localhost:8080;
+        proxy_pass http://localhost:8082;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
     }
@@ -136,5 +138,5 @@ Pour vérifier que tout fonctionne :
 docker ps
 
 # Tester l'accès
-curl http://localhost:8080
+curl http://localhost:8082
 ```
