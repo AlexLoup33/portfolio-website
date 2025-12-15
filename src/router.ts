@@ -4,36 +4,28 @@ import type { RouteRecordRaw } from "vue-router";
 const routes: Array<RouteRecordRaw> = [
     {
         path: "/",
-        redirect: "/home"
-    },
-    {
-        path: "/home",
         name: "home",
-        component: () => import("./components/Home.vue"),
-        props: true
+        component: () => import("./components/Home.vue")
     },
     {
         path: "/work",
         name: "work",
-        component: () => import("./components/Work.vue"),
-        props: true
+        component: () => import("./components/Work.vue")
     },
     {
         path: "/blog",
         name: "blog",
-        component: () => import ("./components/Blog.vue"),
-        props: true
+        component: () => import("./components/Blog.vue")
     },
     {
         path: "/blog/takuzu",
-        name: "Takuzu 2077",
-        component: () => import ("./components/articles/Takuzu.vue"),
-        props: true
+        name: "Takuzu2077",
+        component: () => import("./components/articles/Takuzu.vue")
     },
     {
         path: "/:pathMatch(.*)*",
         name: "NotFound",
-        component: () => import ("./components/NotFound.vue")
+        component: () => import("./components/NotFound.vue")
     }
 ];
 
