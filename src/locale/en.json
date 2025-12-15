@@ -89,7 +89,7 @@
             "date": "2022 - 2023",
             "description": "Implementation of the Takuzu game in C and Web3 as part of the 'Technological Project' course during the second year of the bachelor's degree. Game implementation, solver, history, graphical interface, and Web3 port."
         },
-        "webApp-image": {
+        "webAppImage": {
             "title": "Web App Images",
             "date": "January 2024 - April 2024",
             "description": "Implementation of a backend/frontend web application as part of a student project, allowing image and GIF hosting and the application of filters."

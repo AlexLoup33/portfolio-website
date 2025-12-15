@@ -76,9 +76,9 @@ export default defineComponent({
                     blogRoute: 'blog/Takuzu'
                 },
                 {
-                    title: this.$t('work.projets.webApp-image.title'),
-                    period: this.$t('work.projets.webApp-image.date'),
-                    description: this.$t('work.projets.webApp-image.description'),
+                    title: this.$t('work.projets.webAppImage.title'),
+                    period: this.$t('work.projets.webAppImage.date'),
+                    description: this.$t('work.projets.webAppImage.description'),
                     images: [
                         Pdl1,
                     ],

@@ -96,7 +96,7 @@
             "date": "2022 - 2023",
             "description": "Implémentation du jeu du Takuzu en C et Web3 dans le cadre de notre matière 'Projet Technologique' en 2ème année de licence. Implémentation du jeu, solver, historique, interface graphique et portage web3."
         },
-        "webApp-image":{
+        "webAppImage":{
             "title": "Web App Images",
             "date": "Janvier 2024 - Avril 2024",
             "description": "Implémentation d'une web app backend/frontend dans le cadre d'un projet étudiant permettant d'héberger et d'appliquer des filtres à des images et des GIF"
