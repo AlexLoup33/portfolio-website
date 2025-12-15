@@ -4,6 +4,10 @@ import type { RouteRecordRaw } from "vue-router";
 const routes: Array<RouteRecordRaw> = [
     {
         path: "/",
+        redirect: "/home"
+    },
+    {
+        path: "/home",
         name: "home",
         component: () => import("./components/Home.vue"),
         props: true
@@ -25,6 +29,11 @@ const routes: Array<RouteRecordRaw> = [
         name: "Takuzu 2077",
         component: () => import ("./components/articles/Takuzu.vue"),
         props: true
+    },
+    {
+        path: "/:pathMatch(.*)*",
+        name: "NotFound",
+        component: () => import ("./components/NotFound.vue")
     }
 ];
 

@@ -14,7 +14,7 @@ const changeLocale = (lang: string) => {
     <nav>
       <ul>
         <li>
-          <router-link to="/">{{ $t('nav.home') }}</router-link>
+          <router-link to="/home">{{ $t('nav.home') }}</router-link>
         </li>
         <li>
           <router-link to="/work">{{ $t('nav.work') }}</router-link>
