@@ -15,7 +15,8 @@ const i18n = createI18n({
         FR,
         EN,
         JP
-    }
+    },
+    warnHtmlMessage: false
 })
 
 createApp(App).use(router).use(i18n).mount('#app')
