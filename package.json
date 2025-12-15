@@ -1,21 +1,23 @@
 {
   "name": "alexloup-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "typecheck": "vue-tsc -b",
+    "build": "vite build",
+    "build:strict": "vue-tsc -b && vite build",
     "preview": "vite preview"
   },
+
   "dependencies": {
-    "@babel/core": "^7.28.5",
-    "@popperjs/core": "^2.11.8",
-    "path": "^0.12.7",
     "vue": "^3.5.24",
-    "vue-i18n": "^11.2.2",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vue-i18n": "^11.2.2"
   },
+
   "devDependencies": {
     "@types/node": "^24.10.1",
     "@vitejs/plugin-vue": "^6.0.1",

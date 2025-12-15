@@ -7,6 +7,12 @@ import ambiguLogo from '@/assets/images/ambigu.png' // Logo AMBIGU
 import openMPLogo from '@/assets/images/OpenMP_logo.png' // Logo OpenMP
 import openMPILogo from '@/assets/images/Open_MPI_logo.png' // Logo Open MPI
 
+import cvPdf from '@/assets/CV_AlexandreLP.pdf'
+
+import global from '@/assets/images/world.png'
+import navette from '@/assets/images/navette.png'
+import paper from '@/assets/images/paper.png'
+
 export default defineComponent({
     computed: {
         associations() {
@@ -31,6 +37,9 @@ export default defineComponent({
     data() {
         return {
             backgroundImage: backgroundImage,
+            global: global,
+            navette: navette,
+            paper: paper,
             formData: {
                 name: '',
                 email: '',
@@ -61,7 +70,7 @@ export default defineComponent({
     methods: {
         downloadCV() {
             const link = document.createElement('a')
-            link.href = "/src/assets/CV_AlexandreLP.pdf"
+            link.href = cvPdf
             link.download = "CV_AlexandreLP.pdf"
             document.body.appendChild(link)
             link.click()
@@ -92,7 +101,7 @@ export default defineComponent({
         handleImageError(event: Event) {
             console.error('Erreur de chargement de l\'image:', event)
             const img = event.target as HTMLImageElement
-            img.src = '../assets/images/label-i.png'
+            img.src = labelILogo
         }
     }
 })
@@ -108,7 +117,7 @@ export default defineComponent({
                 >
                     <!-- ABOUT ME -->
                     <div class="card-section-item">
-                            <img src="../assets/images/world.png" alt="world-about-me" class="world-img"/>
+                            <img :src="global" alt="world-about-me" class="world-img"/>
                             <h3>{{ $t('home.aboutMe') }}</h3>
                     </div>
 
@@ -122,7 +131,7 @@ export default defineComponent({
                     <div class="card-section-item">
                             <div class="about-section-item-white-blur">
                                 <span>
-                                    <img src="../assets/images/navette.png" alt="target-mission"/>
+                                    <img :src="navette" alt="target-mission"/>
                                     <h3>{{ $t('home.myMission') }}</h3>
                                 </span>
             
@@ -142,7 +151,7 @@ export default defineComponent({
                 
                 <div class="cv-section-item">
                     <span>
-                        <img src="../assets/images/paper.png" alt="paper-cv">
+                        <img :src="paper" alt="paper-cv">
                         <h2>CV</h2>
                     </span>
                     
@@ -220,7 +229,7 @@ export default defineComponent({
                         <div class="association-content">
                             <div class="association-header">
                                 <img 
-                                    :src="association.logo || '../assets/images/label-i.png'" 
+                                    :src="association.logo || '@/assets/images/label-i.png'" 
                                     :alt="association.name + ' logo'"
                                     class="association-logo"
                                     @error="handleImageError"

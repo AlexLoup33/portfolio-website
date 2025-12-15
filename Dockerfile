@@ -1,37 +1,37 @@
-# Stage 1: Build
+# ========================
+# STAGE 1 — BUILD
+# ========================
 FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-# Copier package.json et package-lock.json
+# Install deps
 COPY package*.json ./
-
-# Installer toutes les dépendances (dev + prod)
 RUN npm ci
 
-# Copier le reste du projet
+# Copy source
 COPY . .
 
-# Build production avec base "/" pour SPA
-RUN npm run build -- --base "/"
+# Build for production
+RUN npm run build
 
-# Stage 2: Production avec Nginx
+
+# ========================
+# STAGE 2 — NGINX
+# ========================
 FROM nginx:alpine
 
-# Supprimer la config par défaut
+# Remove default config
 RUN rm /etc/nginx/conf.d/default.conf
 
-# Copier config nginx personnalisée
-COPY nginx.conf /etc/nginx/conf.d/
+# Copy custom nginx config
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Copier le build depuis le stage builder
+# Copy build output
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Créer dossier logs pour Nginx
-RUN mkdir -p /var/log/nginx
-
-# Exposer port 80
+# Expose HTTP
 EXPOSE 80
 
-# Lancer Nginx en premier plan
+# Start nginx
 CMD ["nginx", "-g", "daemon off;"]
