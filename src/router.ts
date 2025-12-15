@@ -5,27 +5,31 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: "/",
         name: "home",
-        component: () => import("./components/Home.vue")
+        component: () => import("./components/Home.vue"),
+        props: true
     },
     {
         path: "/work",
         name: "work",
-        component: () => import("./components/Work.vue")
+        component: () => import("./components/Work.vue"),
+        props: true
     },
     {
         path: "/blog",
         name: "blog",
-        component: () => import("./components/Blog.vue")
+        component: () => import ("./components/Blog.vue"),
+        props: true
     },
     {
         path: "/blog/takuzu",
-        name: "Takuzu2077",
-        component: () => import("./components/articles/Takuzu.vue")
+        name: "Takuzu 2077",
+        component: () => import ("./components/articles/Takuzu.vue"),
+        props: true
     },
     {
         path: "/:pathMatch(.*)*",
         name: "NotFound",
-        component: () => import("./components/NotFound.vue")
+        component: () => import ("./components/NotFound.vue")
     }
 ];
 

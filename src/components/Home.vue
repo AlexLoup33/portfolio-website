@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-// Importez votre image de fond
+
 import backgroundImage from '@/assets/images/background-top.jpg' // Remplacez par le nom de votre image
 import labelILogo from '@/assets/images/label-i.png' // Logo LABEL[i]
 import ambiguLogo from '@/assets/images/ambigu.png' // Logo AMBIGU
