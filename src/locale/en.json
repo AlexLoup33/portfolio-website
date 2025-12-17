@@ -40,11 +40,13 @@
   },
   "professional": {
     "internship2026": {
-      "title": "HPC internship",
+      "date": "February 2026 - September 2026",
+      "title": "HPC Internship",
       "company": "Inria",
       "description": "High Performance Computing internship based on the following subject\nImproving I/O performance of the Gysela HPC application"
     },
     "payroll2023": {
+      "date": "Summer 2023 to 2025",
       "title": "Payroll Manager",
       "company": "Sodexo",
       "description": "Salary administration and various payroll tasks for Sodexo employees"
@@ -52,28 +54,33 @@
   },
   "academic": {
     "master2024": {
+      "date": "2024 - Present",
       "title": "Master's Degree in Computer Networks",
-      "institution": "Bordeaux's University",
+      "institution": "University of Bordeaux",
       "description": "Specialized in High Performance Computing, distributed systems, and network architecture."
     },
     "bachelor2021": {
-      "title": "University Bachelor's Degree in Computer Science",
-      "institution": "Bordeaux's University",
+      "date": "2021 - 2024",
+      "title": "Bachelor's Degree in Computer Science",
+      "institution": "University of Bordeaux",
       "description": "Foundation in development, algorithms, and computer systems."
     },
     "bac2018": {
-      "title": "Scientific's Bachelor's Degree in Camille Jullian High School's",
+      "date": "2018 - 2021",
+      "title": "Scientific High School Diploma",
       "institution": "Lycée Camille Jullian",
-      "description": "Bachelor's Degree in mathematics and Physics and Chemistry"
+      "description": "High school diploma with a specialization in Mathematics and Physics-Chemistry."
     }
   },
   "associations": {
     "labeli": {
-      "role": "President/Secretary/Local Manager",
+      "date": "2021 - Present",
+      "role": "President / Secretary / Local Coordinator",
       "description": "During my years in the association, I held several leadership roles, including Secretary, President, and Local Coordinator, which allowed me to gain experience in organization, coordination, and responsibility."
     },
     "ambigu": {
-      "role": "IT advisor",
+      "date": "2024 - Present",
+      "role": "IT Advisor",
       "description": "I am responsible for the IT infrastructure of the student association AMBiGU, a geology-focused student organization, ensuring the maintenance and proper functioning of its digital tools."
     }
   },
@@ -84,21 +91,21 @@
     "viewOnGithub": "View on GitHub",
     "readBlog": "Read Blog",
     "projets": {
-        "takuzu2077": {
-            "title": "Takuzu 2077",
-            "date": "2022 - 2023",
-            "description": "Implementation of the Takuzu game in C and Web3 as part of the 'Technological Project' course during the second year of the bachelor's degree. Game implementation, solver, history, graphical interface, and Web3 port."
-        },
-        "webAppImage": {
-            "title": "Web App Images",
-            "date": "January 2024 - April 2024",
-            "description": "Implementation of a backend/frontend web application as part of a student project, allowing image and GIF hosting and the application of filters."
-        },
-        "scrabble": {
-            "title": "Scrabble",
-            "date": "January 2025 - April 2025",
-            "description": "Group project in Java aiming to implement a Scrabble game from scratch with various features: CLI interface, graphical interface, game modes (Normal, Blitz, Super Scrabble), customizable dictionaries, game history and save system, and many more options."
-        }
+      "takuzu2077": {
+        "title": "Takuzu 2077",
+        "date": "2022 - 2023",
+        "description": "Implementation of the Takuzu game in C and Web3 as part of the 'Technological Project' course during the second year of the bachelor's degree. Game implementation, solver, history, graphical interface, and Web3 port."
+      },
+      "webAppImage": {
+        "title": "Web App Images",
+        "date": "January 2024 - April 2024",
+        "description": "Implementation of a backend/frontend web application as part of a student project, allowing image and GIF hosting and the application of filters."
+      },
+      "scrabble": {
+        "title": "Scrabble",
+        "date": "January 2025 - April 2025",
+        "description": "Group project in Java aiming to implement a Scrabble game from scratch with various features: CLI interface, graphical interface, game modes (Normal, Blitz, Super Scrabble), customizable dictionaries, game history and save system, and many more options."
+      }
     }
   },
   "blog": {
