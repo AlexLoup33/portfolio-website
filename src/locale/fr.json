@@ -31,7 +31,7 @@
       "email": "Email*",
       "message": "Message*",
       "namePlaceholder": "Votre nom",
-      "emailPlaceholder": "votre.email@exemple.com",
+      "emailPlaceholder": "votre.email{'@'}exemple.com",
       "messagePlaceholder": "Votre message...",
       "charCount": "caractères",
       "send": "Envoyer",
@@ -43,7 +43,7 @@
       "date": "Février 2026 - Septembre 2026",
       "title": "Stage HPC",
       "company": "Inria",
-      "description": "Stage en Calcul Haute Performance basé sur le sujet suivant<br>Amélioration des performances I/O de l'application HPC Gysela"
+      "description": "Stage en Calcul Haute Performance basé sur le sujet suivant\nAmélioration des performances I/O de l'application HPC Gysela"
     },
     "payroll2023": {
       "date": "Eté 2023 à 2025",
@@ -94,7 +94,7 @@
       "takuzu2077": {
         "title": "Takuzu 2077",
         "date": "2022 - 2023",
-        "description": "Implémentation du jeu du Takuzu en C et Web3 dans le cadre de notre matière 'Projet Technologique' en 2ème année de licence.<br>Implémentation du jeu, solver, historique, interface graphique et portage web3."
+        "description": "Implémentation du jeu du Takuzu en C et Web3 dans le cadre de notre matière 'Projet Technologique' en 2ème année de licence.\nImplémentation du jeu, solver, historique, interface graphique et portage web3."
       },
       "webAppImage": {
         "title": "Web App Images",

@@ -31,7 +31,7 @@
       "email": "メール*",
       "message": "メッセージ*",
       "namePlaceholder": "お名前",
-      "emailPlaceholder": "your.email@example.com",
+      "emailPlaceholder": "your.email{'@'}example.com",
       "messagePlaceholder": "メッセージ...",
       "charCount": "文字",
       "send": "送信",
