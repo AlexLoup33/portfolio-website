@@ -3,34 +3,7 @@
 ## Prérequis
 - Docker installé sur le VPS
 
-## Méthode 1 : Avec Docker Compose (Recommandé)
-
-### 1. Transférer les fichiers sur le VPS
-```bash
-# Depuis votre machine locale, transférer les fichiers nécessaires
-scp -r . user@vps-ip:/path/to/portfolio-website
-```
-
-### 2. Sur le VPS, se placer dans le dossier du projet
-```bash
-cd /path/to/portfolio-website
-```
-
-### 3. Construire et lancer le container
-```bash
-# Construire l'image et lancer le container
-docker-compose up -d --build
-
-# Voir les logs
-docker-compose logs -f
-
-# Arrêter le container
-docker-compose down
-```
-
-Le site sera accessible sur `http://vps-ip:8082`
-
-## Méthode 2 : Avec Docker uniquement
+## Création du Docker
 
 ### 1. Construire l'image
 ```bash
@@ -65,18 +38,6 @@ docker rmi portfolio-website
 ```
 
 ## Mise à jour du site
-
-### Avec Docker Compose
-```bash
-# Arrêter le container
-docker-compose down
-
-# Récupérer les dernières modifications (si vous utilisez git)
-git pull
-
-# Reconstruire et relancer
-docker-compose up -d --build
-```
 
 ### Avec Docker uniquement
 ```bash
