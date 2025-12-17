@@ -43,10 +43,10 @@
       "date": "February 2026 - September 2026",
       "title": "HPC Internship",
       "company": "Inria",
-      "description": "High Performance Computing internship based on the following subject\nImproving I/O performance of the Gysela HPC application"
+      "description": "High Performance Computing internship based on the following subject<br>Improving I/O performance of the Gysela HPC application"
     },
     "payroll2023": {
-      "date": "Summer 2023 to 2025",
+      "date": "Summer 2023 - 2025",
       "title": "Payroll Manager",
       "company": "Sodexo",
       "description": "Salary administration and various payroll tasks for Sodexo employees"
@@ -54,32 +54,32 @@
   },
   "academic": {
     "master2024": {
-      "date": "2024 - Present",
+      "date": "2024 - Now",
       "title": "Master's Degree in Computer Networks",
-      "institution": "University of Bordeaux",
+      "institution": "Bordeaux University",
       "description": "Specialized in High Performance Computing, distributed systems, and network architecture."
     },
     "bachelor2021": {
       "date": "2021 - 2024",
-      "title": "Bachelor's Degree in Computer Science",
-      "institution": "University of Bordeaux",
+      "title": "University Bachelor's Degree in Computer Science",
+      "institution": "Bordeaux University",
       "description": "Foundation in development, algorithms, and computer systems."
     },
     "bac2018": {
       "date": "2018 - 2021",
-      "title": "Scientific High School Diploma",
+      "title": "Scientific Bachelor's Degree at Camille Jullian High School",
       "institution": "Lycée Camille Jullian",
-      "description": "High school diploma with a specialization in Mathematics and Physics-Chemistry."
+      "description": "Bachelor's degree in mathematics and Physics and Chemistry"
     }
   },
   "associations": {
     "labeli": {
-      "date": "2021 - Present",
-      "role": "President / Secretary / Local Coordinator",
+      "date": "2021 - Now",
+      "role": "President/Secretary/Local Manager",
       "description": "During my years in the association, I held several leadership roles, including Secretary, President, and Local Coordinator, which allowed me to gain experience in organization, coordination, and responsibility."
     },
     "ambigu": {
-      "date": "2024 - Present",
+      "date": "2024 - Now",
       "role": "IT Advisor",
       "description": "I am responsible for the IT infrastructure of the student association AMBiGU, a geology-focused student organization, ensuring the maintenance and proper functioning of its digital tools."
     }
@@ -94,7 +94,7 @@
       "takuzu2077": {
         "title": "Takuzu 2077",
         "date": "2022 - 2023",
-        "description": "Implementation of the Takuzu game in C and Web3 as part of the 'Technological Project' course during the second year of the bachelor's degree. Game implementation, solver, history, graphical interface, and Web3 port."
+        "description": "Implementation of the Takuzu game in C and Web3 as part of the 'Technological Project' course during the second year of the bachelor's degree.<br>Game implementation, solver, history, graphical interface, and Web3 port."
       },
       "webAppImage": {
         "title": "Web App Images",

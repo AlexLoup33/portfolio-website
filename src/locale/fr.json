@@ -40,13 +40,13 @@
   },
   "professional": {
     "internship2026": {
-        "date": "Février 2026 - Septembre 2026",
+      "date": "Février 2026 - Septembre 2026",
       "title": "Stage HPC",
       "company": "Inria",
-      "description": "Stage en Calcul Haute Performance basé sur le sujet suivant\nAmélioration des performances I/O de l'application HPC Gysela"
+      "description": "Stage en Calcul Haute Performance basé sur le sujet suivant<br>Amélioration des performances I/O de l'application HPC Gysela"
     },
     "payroll2023": {
-        "date":"Eté 2023 à 2025",
+      "date": "Eté 2023 à 2025",
       "title": "Gestionnaire de Paie",
       "company": "Sodexo",
       "description": "Gestion de payes et diverses tâches de paie pour les employés de Sodexo"
@@ -54,19 +54,19 @@
   },
   "academic": {
     "master2024": {
-        "date": "2024 - Maintenant",
+      "date": "2024 - Maintenant",
       "title": "Master en Réseaux Informatiques",
       "institution": "Université de Bordeaux",
       "description": "Spécialisé en Calcul Haute Performance, calcul distribué et architecture réseau."
     },
     "bachelor2021": {
-        "date": "2021 - 2024",
+      "date": "2021 - 2024",
       "title": "Licence en Informatique",
       "institution": "Université de Bordeaux",
       "description": "Développement, algorithmes et système."
     },
     "bac2018": {
-        "date": "2018 - 2021",
+      "date": "2018 - 2021",
       "title": "Baccalauréat Scientifique au Lycée Camille Jullian",
       "institution": "Lycée Camille Jullian",
       "description": "Baccalauréat spécialité mathématiques et Physique-Chimie"
@@ -74,12 +74,12 @@
   },
   "associations": {
     "labeli": {
-        "date": "2021 - Maintenant",
+      "date": "2021 - Maintenant",
       "role": "Président/Secrétaire/Coordinateur Local",
       "description": "Au cours de mes années dans l'association, j'ai occupé plusieurs rôles de leadership, notamment Secrétaire, Président et Responsable Local, ce qui m'a permis d'acquérir de l'expérience en organisation, coordination et responsabilité."
     },
     "ambigu": {
-        "date": "2024 - Maintenant",
+      "date": "2024 - Maintenant",
       "role": "Conseiller IT",
       "description": "Je suis responsable informatique de l'association étudiante AMBiGU, une association étudiante bordelaise axée sur la géologie. Mon rôle est d'assurer la maintenance et le bon fonctionnement de ses outils numériques."
     }
@@ -91,21 +91,21 @@
     "viewOnGithub": "Voir sur GitHub",
     "readBlog": "Lire le blog",
     "projets": {
-        "takuzu2077":{
-            "title":"Takuzu 2077",
-            "date": "2022 - 2023",
-            "description": "Implémentation du jeu du Takuzu en C et Web3 dans le cadre de notre matière 'Projet Technologique' en 2ème année de licence. Implémentation du jeu, solver, historique, interface graphique et portage web3."
-        },
-        "webAppImage":{
-            "title": "Web App Images",
-            "date": "Janvier 2024 - Avril 2024",
-            "description": "Implémentation d'une web app backend/frontend dans le cadre d'un projet étudiant permettant d'héberger et d'appliquer des filtres à des images et des GIF"
-        },
-        "scrabble": {
-            "title": "Scrabble",
-            "date": "Janvier 2025 - Avril 2025",
-            "description": "Projet de groupe en Java visant à implémenter un scrabble from scratch avec diverses options : Interface CLI, Interface graphique, Modes de jeu (Normal, Blitz, Super Scrabble), dictionnaires customisables, historique et sauvegarde des parties, et encore plein d'autres options."
-        }
+      "takuzu2077": {
+        "title": "Takuzu 2077",
+        "date": "2022 - 2023",
+        "description": "Implémentation du jeu du Takuzu en C et Web3 dans le cadre de notre matière 'Projet Technologique' en 2ème année de licence.<br>Implémentation du jeu, solver, historique, interface graphique et portage web3."
+      },
+      "webAppImage": {
+        "title": "Web App Images",
+        "date": "Janvier 2024 - Avril 2024",
+        "description": "Implémentation d'une web app backend/frontend dans le cadre d'un projet étudiant permettant d'héberger et d'appliquer des filtres à des images et des GIF."
+      },
+      "scrabble": {
+        "title": "Scrabble",
+        "date": "Janvier 2025 - Avril 2025",
+        "description": "Projet de groupe en Java visant à implémenter un scrabble from scratch avec diverses options : Interface CLI, Interface graphique, Modes de jeu (Normal, Blitz, Super Scrabble), dictionnaires customisables, historique et sauvegarde des parties, et encore plein d'autres options."
+      }
     }
   },
   "blog": {
