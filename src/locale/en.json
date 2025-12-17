@@ -31,7 +31,7 @@
       "email": "Email*",
       "message": "Message*",
       "namePlaceholder": "Your name",
-      "emailPlaceholder": "your.email@example.com",
+      "emailPlaceholder": "your.email{'@'}example.com",
       "messagePlaceholder": "Your message...",
       "charCount": "characters",
       "send": "Send",
@@ -43,7 +43,7 @@
       "date": "February 2026 - September 2026",
       "title": "HPC Internship",
       "company": "Inria",
-      "description": "High Performance Computing internship based on the following subject<br>Improving I/O performance of the Gysela HPC application"
+      "description": "High Performance Computing internship based on the following subject\nImproving I/O performance of the Gysela HPC application"
     },
     "payroll2023": {
       "date": "Summer 2023 - 2025",
@@ -94,7 +94,7 @@
       "takuzu2077": {
         "title": "Takuzu 2077",
         "date": "2022 - 2023",
-        "description": "Implementation of the Takuzu game in C and Web3 as part of the 'Technological Project' course during the second year of the bachelor's degree.<br>Game implementation, solver, history, graphical interface, and Web3 port."
+        "description": "Implementation of the Takuzu game in C and Web3 as part of the 'Technological Project' course during the second year of the bachelor's degree.\nGame implementation, solver, history, graphical interface, and Web3 port."
       },
       "webAppImage": {
         "title": "Web App Images",
