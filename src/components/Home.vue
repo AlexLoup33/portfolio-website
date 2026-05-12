@@ -6,7 +6,7 @@ import labelILogo from '@/assets/images/label-i.png'
 import ambiguLogo from '@/assets/images/ambigu.png'
 import openMPLogo from '@/assets/images/OpenMP_logo.png'
 import openMPILogo from '@/assets/images/Open_MPI_logo.png'
-import cvPdf from '@/assets/CV_AlexandreLP.pdf'
+import cvPdf from '@/assets/CV_Alexandre_LP.pdf'
 
 import global from '@/assets/images/world.png'
 import navette from '@/assets/images/navette.png'
@@ -51,7 +51,7 @@ export default defineComponent({
         downloadCV() {
             const link = document.createElement('a')
             link.href = cvPdf
-            link.download = "CV_AlexandreLP.pdf"
+            link.download = "CV_Alexandre_LP.pdf"
             document.body.appendChild(link)
             link.click()
             document.body.removeChild(link)
