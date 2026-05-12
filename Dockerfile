@@ -1,37 +1,17 @@
-# ========================
-# STAGE 1 — BUILD
-# ========================
-FROM node:20-alpine AS builder
+FROM node:20-alpine
 
 WORKDIR /app
 
-# Install deps
 COPY package*.json ./
+
 RUN npm ci
 
-# Copy source
 COPY . .
 
-# Build for production
 RUN npm run build
 
+RUN npm install -g serve
 
-# ========================
-# STAGE 2 — NGINX
-# ========================
-FROM nginx:alpine
+EXPOSE 4000
 
-# Remove default config
-RUN rm /etc/nginx/conf.d/default.conf
-
-# Copy custom nginx config
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-# Copy build output
-COPY --from=builder /app/dist /usr/share/nginx/html
-
-# Expose HTTP
-EXPOSE 80
-
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["serve", "-s", "dist", "-l", "4000"]

@@ -1,13 +1,18 @@
-version: '3.8'
+version: "3.9"
 
 services:
-  portfolio:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: portfolio-website
-    ports:
-      - "8082:80"
+  portfolio-alexloup:
+    build: .
+    container_name: portfolio-alexloup
+
     restart: unless-stopped
-    environment:
-      - NODE_ENV=production
+
+    expose: 
+      - "4000"
+    
+    networks:
+      - proxy
+  
+networks:
+  proxy:
+    external: true
