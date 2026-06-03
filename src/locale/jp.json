@@ -52,6 +52,17 @@
       "description": "Sodexo従業員の給与管理および各種給与業務"
     }
   },
+  "scientificContributions": {
+    "title": "科学的貢献",
+    "iops": {
+      "title": "IOPS : I/O benchmarking tool",
+      "description": "プロジェクトに対するマイナーな変更、特にCLIインターフェースに関するもの"
+    },
+    "gys_io": {
+      "title": "Gys_io : Gysela HPCアプリケーションのI/Oカーネル",
+      "description": "I/Oフェーズ中にHDF5経由でのサブファイル実行を有効にするためのgys_io mini-appソースコードの変更"
+    }
+  },
   "academic": {
     "master2024": {
       "date": "2024 - 現在",

@@ -143,6 +143,20 @@ export default defineComponent({
                     </div>
                 </div>
             </div>
+            
+            <div class="home-content-item scientific-contribution-section">
+                <h2 class="section-title">{{ $t('scientificContributions.title') }}</h2>
+                <div class="scientific-contribution-list">
+                    <div class="scientific-contribution-item">
+                        <h3>{{ $t('scientificContributions.iops.title') }}</h3>
+                        <p class="scientific-description">{{ $t('scientificContributions.iops.description') }}</p>
+                    </div>
+                    <div class="scientific-contribution-item">
+                        <h3>{{ $t('scientificContributions.gys_io.title') }}</h3>
+                        <p class="scientific-description">{{ $t('scientificContributions.gys_io.description') }}</p>
+                    </div>
+                </div>
+            </div>
 
             <div class="home-content-item academic-section">
                 <h2 class="section-title">{{ $t('home.academicBackground') }}</h2>

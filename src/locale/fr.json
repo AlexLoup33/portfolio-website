@@ -52,6 +52,17 @@
       "description": "Gestion de payes et diverses tâches de paie pour les employés de Sodexo"
     }
   },
+  "scientificContributions": {
+    "title":"Contributions Scientifiques",
+    "iops": {
+      "title": "IOPS : I/O benchmarking tool",
+      "description": "Modification mineure sur le projet notamment au niveau de l'interface CLI"
+    },
+    "gys_io": {
+      "title": "Gys_io : I/O kernel de l'application HPC Gysela",
+      "description": "Modification du code source de gys_io mini-app pour permettre l'éxécution du subfiling via HDF5 sur la phase I/O"
+    }
+  },
   "academic": {
     "master2024": {
       "date": "2024 - Maintenant",

@@ -52,6 +52,17 @@
       "description": "Salary administration and various payroll tasks for Sodexo employees"
     }
   },
+  "scientificContributions": {
+    "title": "Scientific Contributions",
+    "iops": {
+      "title": "IOPS : I/O benchmarking tool",
+      "description": "Minor modification on the project notably on the CLI interface"
+    },
+    "gys_io": {
+      "title": "Gys_io : I/O kernel of the Gysela HPC application",
+      "description": "Modification of the gys_io mini-app source code to enable subfiling execution via HDF5 during the I/O phase"
+    }
+  },
   "academic": {
     "master2024": {
       "date": "2024 - Now",
