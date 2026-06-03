@@ -146,14 +146,18 @@ export default defineComponent({
             
             <div class="home-content-item scientific-contribution-section">
                 <h2 class="section-title">{{ $t('scientificContributions.title') }}</h2>
-                <div class="scientific-contribution-list">
+                <div class="scientific-contribution-timeline">
                     <div class="scientific-contribution-item">
-                        <h3>{{ $t('scientificContributions.iops.title') }}</h3>
-                        <p class="scientific-description">{{ $t('scientificContributions.iops.description') }}</p>
+                        <div class="scientific-contribution-content">
+                            <h3>{{ $t('scientificContributions.iops.title') }}</h3>
+                            <p class="scientific-description">{{ $t('scientificContributions.iops.description') }}</p>
+                        </div>
                     </div>
                     <div class="scientific-contribution-item">
-                        <h3>{{ $t('scientificContributions.gys_io.title') }}</h3>
-                        <p class="scientific-description">{{ $t('scientificContributions.gys_io.description') }}</p>
+                        <div class="scientific-contribution-content">
+                            <h3>{{ $t('scientificContributions.gys_io.title') }}</h3>
+                            <p class="scientific-description">{{ $t('scientificContributions.gys_io.description') }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
