@@ -56,11 +56,11 @@
     "title": "Scientific Contributions",
     "iops": {
       "title": "IOPS : I/O benchmarking tool",
-      "description": "Minor modification on the project notably on the CLI interface"
+      "description": "Minor modification on the project notably on the CLI interface and bug finder."
     },
     "gys_io": {
       "title": "Gys_io : I/O kernel of the Gysela HPC application",
-      "description": "Modification of the gys_io mini-app source code to enable subfiling execution via HDF5 during the I/O phase"
+      "description": "Modification of the gys_io mini-app source code to enable subfiling execution via HDF5 and File Per Process (FPP) during the I/O phase. Adding configuration script for benchmarking I/O performances with IOPS"
     }
   },
   "academic": {
@@ -84,13 +84,18 @@
     }
   },
   "associations": {
+    "labeli_vps": {
+      "date": "2026 - Now",
+      "role": "VPS admin",
+      "description": "Project management for administration of LABEL[i] VPS"
+    },
     "labeli": {
-      "date": "2021 - Now",
+      "date": "2021 - 2026",
       "role": "President/Secretary/Local Manager",
       "description": "During my years in the association, I held several leadership roles, including Secretary, President, and Local Coordinator, which allowed me to gain experience in organization, coordination, and responsibility."
     },
     "ambigu": {
-      "date": "2024 - Now",
+      "date": "2024 - 2026",
       "role": "IT Advisor",
       "description": "I am responsible for the IT infrastructure of the student association AMBiGU, a geology-focused student organization, ensuring the maintenance and proper functioning of its digital tools."
     }

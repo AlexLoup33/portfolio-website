@@ -27,6 +27,7 @@ export default defineComponent({
             },
             // On ne stocke que les IDs techniques ici
             associationsList: [
+                { id: 'labeli_vps', name: 'LABEL[i]', logo: labelILogo},
                 { id: 'labeli', name: 'LABEL[i]', logo: labelILogo },
                 { id: 'ambigu', name: 'AMBiGU', logo: ambiguLogo }
             ],
