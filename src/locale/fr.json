@@ -12,7 +12,7 @@
     "myMissionText": "Ma mission est d'approfondir mes connaissances en réseaux et en calcul haute performance, et de l'appliquer à des systèmes et projets à grande échelles.",
     "aboutMeTitle": "À propos de moi.",
     "aboutMe1": "J'ai commencé la programmation en 2020 avec Godot, ce qui m'a introduit au développement logiciel et à la résolution de problèmes.",
-    "aboutMe2": "Je suis actuellement étudiant en Master 1 informatique parcours Réseaux, avec un fort intérêt pour le Calcul Haute Performance, la programmation bas niveau et la programmation parallèle, et je vise à poursuivre un doctorat.",
+    "aboutMe2": "Je suis actuellement étudiant en Master 2 informatique parcours Calcul Intensif et Science des Données (CISD), avec un fort intérêt pour le Calcul Haute Performance, la programmation bas niveau et la programmation parallèle, et je vise à poursuivre un doctorat.",
     "aboutMe3": "Je développe principalement des logiciels natifs en C et C++, et j'utilise Python pour le prototypage, l'expérimentation et les outils, avec un fort accent sur les performances et l'efficacité.",
     "cv": "CV",
     "downloadCV": "Télécharger mon CV",
@@ -39,11 +39,18 @@
     }
   },
   "professional": {
+    "notes": "Lettre de recommandation et références académiques disponibles sur demande.",
+    "partTimecontract": {
+      "date": "Novembre 2026 - Avril 2027",
+      "title": "Contrat Vacataire HPC",
+      "company": "Inria Bordeaux",
+      "description": "Ce projet vise à optimiser les performances d'entrée/sortie (E/S) du code de simulation HPC GYSELA (CEA) dans le cadre du programme PEPR NumPEx. Il repose sur l'utilisation de l'optimisation bayésienne pour identifier les meilleures configurations de paramétrage (PDI, HDF5, NetCDF) et sur la réalisation d'expérimentations à très grande échelle sur le supercalculateur Adastra (CINES). Les travaux intègrent également l'évaluation de l'outil TOTO, la collaboration directe avec les équipes du CEA Cadarache et la rédaction d'une publication scientifique."
+    },
     "internship2026": {
-      "date": "Février 2026 - Juillet 2026",
-      "title": "Stage HPC",
-      "company": "Inria",
-      "description": "Stage en Calcul Haute Performance basé sur le sujet suivant\nAmélioration des performances I/O de l'application HPC Gysela"
+      "date": "Février 2026 – Juillet 2026",
+      "title": "Stage de recherche HPC — Équipe TADaaM",
+      "company": "Inria Centre de l'Université de Bordeaux",
+      "description": "Optimisation des performances E/S et réduction de la surcharge des checkpoints sur le code de simulation plasma GYSELA.\nÉvaluation des stratégies E/S parallèles avec PDI sur BeeGFS et Lustre avec maximisation du recouvrement calcul/E/S.\nCampagnes de profilage et de benchmarking sur les supercalculateurs PlaFRIM et Adastra à l'aide de l'outil IOPS.\nPrésentation des résultats de recherche lors de la conférence Compas 2026."
     },
     "payroll2023": {
       "date": "Eté 2023 à 2025",
@@ -52,8 +59,8 @@
       "description": "Gestion de payes et diverses tâches de paie pour les employés de Sodexo"
     }
   },
-  "scientificContributions": {
-    "title":"Contributions Scientifiques",
+  "softwareContributions": {
+    "title":"Contributions Logiciels",
     "iops": {
       "title": "IOPS : I/O benchmarking tool",
       "description": "Modification mineure sur le projet notamment au niveau de l'interface CLI et chasseur de bug"
@@ -63,11 +70,30 @@
       "description": "Modification du code source de gys_io mini-app pour permettre l'éxécution du subfiling via HDF5 et de File Per Process (FPP) sur la phase I/O. Ajout du fichier de configuration pour le benchmarking via IOPS"
     }
   },
+  "scientificContribution":{
+    "title":"Contributions Scientifiques",
+    "Compas26": {
+      "title": "Compas26",
+      "year" : "Juillet 2026",
+      "description": "Présentation de mes travaux de recherches durant la conférence Compas2026 à Anglet.",
+      "conference" : "Compas (Conférence Francophone en Informatique)",
+      "abstract": "Abstract",
+      "abstract_name": "Compas2026_Gysela_IO",
+      "slides": "Slides",
+      "slides_name": "Amelioration des performances IO de l'application HPC Gysela"
+    },
+    "InSituPaper": {
+      "title": "Scalability benchmark of DEISA-Dask for in-situ HPC analytics",
+      "year": "2026",
+      "authors": "Ivan Lucas, Ariel De Vora, Alexandre Lou-Poueyou, Hugo Strappazzon, Benoît Martin, Virginie Grandgirard",
+      "description": "Évaluation des performances et de la scalabilité du couplage DEISA-Dask pour l'analyse de données in-situ dans les simulations HPC. Travaux en cours destinés à une future soumission."
+    }
+  },
   "academic": {
     "master2024": {
-      "date": "2024 - Maintenant",
-      "title": "Master en Réseaux Informatiques",
-      "institution": "Université de Bordeaux",
+      "date": "2024 - 2027",
+      "title": "Master Informatique - Calcul Intensif et Science des Données (CISD)",
+      "institution": "Université de Bordeaux / Enseirb-MatMeca",
       "description": "Spécialisé en Calcul Haute Performance, calcul distribué et architecture réseau."
     },
     "bachelor2021": {

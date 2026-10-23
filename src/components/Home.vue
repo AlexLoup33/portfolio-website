@@ -6,7 +6,9 @@ import labelILogo from '@/assets/images/label-i.png'
 import ambiguLogo from '@/assets/images/ambigu.png'
 import openMPLogo from '@/assets/images/OpenMP_logo.png'
 import openMPILogo from '@/assets/images/Open_MPI_logo.png'
-import cvPdf from '@/assets/CV_Alexandre_LP.pdf'
+import cvPdf from '@/assets/AlexandreLP_CV.pdf'
+import compas26AbstractPdf from '@/assets/Compas2026_Gysela_IO.pdf'
+import compas26SlidesPdf from '@/assets/Compas26_slides.pdf'
 
 import global from '@/assets/images/world.png'
 import navette from '@/assets/images/navette.png'
@@ -52,7 +54,23 @@ export default defineComponent({
         downloadCV() {
             const link = document.createElement('a')
             link.href = cvPdf
-            link.download = "CV_Alexandre_LP.pdf"
+            link.download = "AlexandreLP_CV.pdf"
+            document.body.appendChild(link)
+            link.click()
+            document.body.removeChild(link)
+        },
+        downloadAbstractCompas26() {
+            const link = document.createElement('a')
+            link.href = compas26AbstractPdf
+            link.download = "Compas26_GyselaIO_abstract.pdf"
+            document.body.appendChild(link)
+            link.click()
+            document.body.removeChild(link)
+        },
+        downloadSlidesCompas26() {
+            const link = document.createElement('a')
+            link.href = compas26SlidesPdf
+            link.download = "Compas26_GyselaIO_slides.pdf"
             document.body.appendChild(link)
             link.click()
             document.body.removeChild(link)
@@ -145,19 +163,43 @@ export default defineComponent({
                 </div>
             </div>
             
-            <div class="home-content-item scientific-contribution-section">
-                <h2 class="section-title">{{ $t('scientificContributions.title') }}</h2>
-                <div class="scientific-contribution-timeline">
-                    <div class="scientific-contribution-item">
-                        <div class="scientific-contribution-content">
-                            <h3>{{ $t('scientificContributions.iops.title') }}</h3>
-                            <p class="scientific-description">{{ $t('scientificContributions.iops.description') }}</p>
+            <div class="home-content-item scientificContribution-section">
+                <h2 class="section-title">{{ $t('scientificContribution.title') }}</h2>
+                <div class="scientificContribution-timeline">
+                    <div class="scientificContribution-item">
+                        <div class="scientificContribution-year">{{ $t('scientificContribution.InSituPaper.year') }}</div>
+                        <div class="scientificContribution-content">
+                            <h3>{{ $t('scientificContribution.InSituPaper.title') }}</h3>
+                            <p class="scientificContribution-authors">{{ $t('scientificContribution.InSituPaper.authors') }}</p>
+                            <p class="scientificContribution-description">{{ $t('scientificContribution.InSituPaper.description') }}</p>
                         </div>
                     </div>
-                    <div class="scientific-contribution-item">
-                        <div class="scientific-contribution-content">
-                            <h3>{{ $t('scientificContributions.gys_io.title') }}</h3>
-                            <p class="scientific-description">{{ $t('scientificContributions.gys_io.description') }}</p>
+
+                    <div class="scientificContribution-item">
+                        <div class="scientificContribution-year">{{ $t('scientificContribution.Compas26.year') }}</div>
+                        <div class="scientificContribution-content">
+                            <h3>{{ $t('scientificContribution.Compas26.title') }}</h3>
+                            <p class="scientificContribution-conference">{{ $t('scientificContribution.Compas26.conference') }}</p>
+                            <p class="scientificContribution-abstract">{{ $t('scientificContribution.Compas26.abstract') }}:<a @click="downloadAbstractCompas26">{{ $t('scientificContribution.Compas26.abstract_name') }}</a></p>
+                            <p class="scientificContribution-slides">{{ $t('scientificContribution.Compas26.slides') }}:<a @click="downloadSlidesCompas26">{{ $t('scientificContribution.Compas26.slides_name') }}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-content-item software-contribution-section">
+                <h2 class="section-title">{{ $t('softwareContributions.title') }}</h2>
+                <div class="software-contribution-timeline">
+                    <div class="software-contribution-item">
+                        <div class="software-contribution-content">
+                            <h3>{{ $t('softwareContributions.iops.title') }}</h3>
+                            <p class="software-description">{{ $t('softwareContributions.iops.description') }}</p>
+                        </div>
+                    </div>
+                    <div class="software-contribution-item">
+                        <div class="software-contribution-content">
+                            <h3>{{ $t('softwareContributions.gys_io.title') }}</h3>
+                            <p class="software-description">{{ $t('softwareContributions.gys_io.description') }}</p>
                         </div>
                     </div>
                 </div>

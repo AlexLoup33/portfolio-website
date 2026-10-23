@@ -12,7 +12,7 @@
     "myMissionText": "My mission is to deepen my expertise in computer networks and high-performance computing, and apply it to real-world large-scale systems.",
     "aboutMeTitle": "About me.",
     "aboutMe1": "I started programming in 2020 with Godot, which introduced me to software development and problem-solving.",
-    "aboutMe2": "I am currently a Master's student in Computer Networks, with a strong interest in High Performance Computing, system-level programming and distributed systems, and I aim to pursue a PhD.",
+    "aboutMe2": "I am currently a Master's student in High-Performance Computing and Data Science (CISD), with a strong interest in High Performance Computing, system-level programming and distributed systems, and I aim to pursue a PhD.",
     "aboutMe3": "I mainly develop native software in C and C++, and use Python for prototyping, experimentation and tooling, with a strong focus on performance and efficiency.",
     "cv": "CV",
     "downloadCV": "Download CV",
@@ -39,35 +39,61 @@
     }
   },
   "professional": {
+    "notes": "Letter of recommendation and academic references available upon request.",
+    "partTimecontract": {
+      "date": "November 2026 - April 2027",
+      "title": "HPC Part-time Contractor",
+      "company": "Inria Bordeaux",
+      "description": "This project aims to optimize the input/output (I/O) performance of the GYSELA HPC simulation code (CEA) as part of the PEPR NumPEx program. It relies on the use of Bayesian optimization to identify the best parameter configurations (PDI, HDF5, NetCDF) and on conducting very large-scale experiments on the Adastra supercomputer (CINES). The work also includes the evaluation of the TOTO tool, direct collaboration with the CEA Cadarache teams, and the drafting of a scientific publication."
+    },
     "internship2026": {
-      "date": "February 2026 - July 2026",
-      "title": "HPC Internship",
-      "company": "Inria",
-      "description": "High Performance Computing internship based on the following subject\nImproving I/O performance of the Gysela HPC application"
+      "date": "February 2026 – July 2026",
+      "title": "HPC Research Internship — TADaaM Team",
+      "company": "Inria Center at the University of Bordeaux",
+      "description": "Optimization of I/O performance and reduction of checkpoint overhead on the GYSELA plasma simulation code.\nEvaluation of parallel I/O strategies with PDI on BeeGFS and Lustre, maximizing computation/I/O overlap.\nProfiling and benchmarking campaigns on the PlaFRIM and Adastra supercomputers using the IOPS tool.\nPresentation of research results at the Compas 2026 conference."
     },
     "payroll2023": {
       "date": "Summer 2023 - 2025",
       "title": "Payroll Manager",
       "company": "Sodexo",
-      "description": "Salary administration and various payroll tasks for Sodexo employees"
+      "description": "Salary administration and various payroll tasks for Sodexo employees."
     }
   },
-  "scientificContributions": {
-    "title": "Scientific Contributions",
+  "softwareContributions": {
+    "title": "Software Contributions",
     "iops": {
       "title": "IOPS : I/O benchmarking tool",
-      "description": "Minor modification on the project notably on the CLI interface and bug finder."
+      "description": "Minor modifications on the project, notably on the CLI interface and bug hunting."
     },
     "gys_io": {
       "title": "Gys_io : I/O kernel of the Gysela HPC application",
-      "description": "Modification of the gys_io mini-app source code to enable subfiling execution via HDF5 and File Per Process (FPP) during the I/O phase. Adding configuration script for benchmarking I/O performances with IOPS"
+      "description": "Modification of the gys_io mini-app source code to enable subfiling execution via HDF5 and File Per Process (FPP) during the I/O phase. Added configuration script for benchmarking I/O performances with IOPS."
+    }
+  },
+  "scientificContribution": {
+    "title": "Scientific Contributions",
+    "Compas26": {
+      "title": "Compas26",
+      "year": "July 2026",
+      "description": "Presentation of my research work during the Compas2026 conference in Anglet.",
+      "conference": "Compas (French-speaking Conference in Computer Science)",
+      "abstract": "Abstract",
+      "abstract_name": "Compas2026_Gysela_IO",
+      "slides": "Slides",
+      "slides_name": "Improving the IO performance of the Gysela HPC application"
+    },
+    "InSituPaper": {
+      "title": "Scalability benchmark of DEISA-Dask for in-situ HPC analytics",
+      "year": "2026",
+      "authors": "Ivan Lucas, Ariel De Vora, Alexandre Lou-Poueyou, Hugo Strappazzon, Benoît Martin, Virginie Grandgirard",
+      "description": "Evaluation of the performance and scalability of the DEISA-Dask coupling for in-situ data analysis in HPC simulations. Work in progress intended for future submission."
     }
   },
   "academic": {
     "master2024": {
-      "date": "2024 - Now",
-      "title": "Master's Degree in Computer Networks",
-      "institution": "Bordeaux University",
+      "date": "2024 - 2027",
+      "title": "Master's Degree - High-Performance-Computing & Data Science (CISD)",
+      "institution": "Bordeaux University / Enseirb-MatMeca",
       "description": "Specialized in High Performance Computing, distributed systems, and network architecture."
     },
     "bachelor2021": {
@@ -78,16 +104,16 @@
     },
     "bac2018": {
       "date": "2018 - 2021",
-      "title": "Scientific Bachelor's Degree at Camille Jullian High School",
+      "title": "Scientific High School Diploma at Camille Jullian",
       "institution": "Lycée Camille Jullian",
-      "description": "Bachelor's degree in mathematics and Physics and Chemistry"
+      "description": "High school diploma majoring in Mathematics and Physics-Chemistry."
     }
   },
   "associations": {
     "labeli_vps": {
       "date": "2026 - Now",
-      "role": "VPS admin",
-      "description": "Project management for administration of LABEL[i] VPS"
+      "role": "Project Manager: VPS Management and Administration",
+      "description": "Management and administration of the association's VPS, deployment of services and programs."
     },
     "labeli": {
       "date": "2021 - 2026",

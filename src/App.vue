@@ -26,7 +26,7 @@ const changeLocale = (lang: string) => {
           <select @change="changeLocale(($event.target as HTMLSelectElement).value)" :value="locale">
             <option value="FR">FR</option>
             <option value="EN">EN</option>
-            <option value="JP">JP</option>
+            <!-- <option value="JP">JP</option> -->
           </select>
         </li>
       </ul>

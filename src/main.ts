@@ -5,7 +5,7 @@ import App from './App.vue'
 import "@/assets/main.scss"
 import FR from './locale/fr.json'
 import EN from './locale/en.json'
-import JP from './locale/jp.json'
+//import JP from './locale/jp.json'
 
 const i18n = createI18n({
     legacy: false,
@@ -13,8 +13,7 @@ const i18n = createI18n({
     fallbackLocale: 'FR',
     messages: {
         FR,
-        EN,
-        JP
+        EN
     },
     warnHtmlMessage: false
 })
